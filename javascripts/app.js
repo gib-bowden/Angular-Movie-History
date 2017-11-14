@@ -1,5 +1,7 @@
+/* globals app: true */
+
 "use strict"; 
 
-// angular.module('myApp', [])
+const app = angular.module('movieApp', ["ngAnimate", "ngRoute", "ngSanitize"]); 
 
-console.log("I'm in mothafucka"); 
+console.log("I'm in"); 
