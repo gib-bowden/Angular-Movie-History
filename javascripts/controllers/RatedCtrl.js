@@ -1,5 +1,5 @@
 "use strict"; 
 
-app.controller("WishlistCtrl", function($scope){
-    $scope.controller = "WishlistCtrl"; 
+app.controller("RatedCtrl", function($scope){
+    $scope.controller = "RatedCtrl"; 
 }); 
