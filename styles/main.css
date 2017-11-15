@@ -1,2 +1,14 @@
+.nav-btn {
+  cursor: pointer; }
+
+#search-container {
+  margin-bottom: 2.5%; }
+
+.input-group-addon:first-child {
+  top: 0px; }
+
+.nav-btn {
+  cursor: pointer; }
+
 body {
   background-color: lightblue; }
