@@ -21,4 +21,4 @@ app.controller("WishlistCtrl", function($rootScope, $scope, MovieService){
             console.log(err); 
         });
     };
-}); 
+});  
