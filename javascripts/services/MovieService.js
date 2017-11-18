@@ -46,7 +46,24 @@ app.service("MovieService", function($http, $q, FIREBASE_CONFIG) {
         return $http.delete(`${FIREBASE_CONFIG.databaseURL}/movies/${movieId}.json`);
     };
 
-    return {deleteMovie, getRatedMovies, getWishlistMovies, postNewMovie};
+    const updateMovie = (movie, movieId) => {
+        return $http.put(`${FIREBASE_CONFIG.databaseURL}/movies/${movieId}.json`, JSON.stringify(movie));
+    };
+
+    const createMovieObject = (movie) => {
+        return {
+        "title": movie.title,
+        "overview": movie.overview,
+        "poster_path": movie.poster_path,
+        "rating": movie.rating,
+        "isWatched": movie.isWatched,
+        "uid": movie.uid
+        };
+    };
+
+
+
+    return {createMovieObject, deleteMovie, getRatedMovies, getWishlistMovies, postNewMovie, updateMovie};
     
 });
 
